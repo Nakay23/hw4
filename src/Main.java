@@ -2,13 +2,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world");
 
-        //Я знаю, что можно использовать else, но в задании просят указать по сообщению в консоли на каждое условие
         int age = 18;
         if (age >= 18) {
             System.out.println("Ты совершеннолетний");
-        }
-        age = 15;
-        if (age < 18) {
+        } else  {
             System.out.println("Ты не достиг совершеннолетия, нужно немного подождать");
         }
 
@@ -27,10 +24,10 @@ public class Main {
         }
 
         int year = 10;
-        if (year >2 && year <6) {
+        if (year >=2 && year <=6) {
             System.out.println("Если возраст человека равен " +year + " лет, то ему нужно ходить в детский сад");
         }
-        if (year >7 && year <17) {
+        if (year >=7 && year <=17) {
             System.out.println("Если возраст человека равен " +year + " лет, то ему нужно ходить в школу");
         }
         if (year >=18 && year <=24) {
@@ -40,17 +37,15 @@ public class Main {
             System.out.println("Если возраст человека равен " +year + " лет, то ему пора ходить на работу");
         }
 
-        int year1 = 12;
-        boolean thereIsAnEscort = true;
-        if (year1 <5) {
-            System.out.println("Если возраст ребенка равен " + year1 + " то он не может кататься на аттракционе");
+        int yearOne = 12;
+        if (yearOne <5) {
+            System.out.println("Если возраст ребенка равен " + yearOne + " то он не может кататься на аттракционе");
         }
-        if (year1 > 5 && year1 < 14); {
-            if (thereIsAnEscort) {
-                System.out.println("Если возраст ребенка равен " + year1 + " то он может кататься, так как присутствует взрослый");
-            } else {
-                System.out.println("Если возраст ребенка равен " + year1 + " то кататься нельзя, так как нет взрослого");
-            }
+        if (yearOne >= 5 && yearOne < 14) {
+            System.out.println("Если возраст ребенка равен " + yearOne + " то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+        }
+        if (yearOne >=14) {
+            System.out.println("Если возраст ребенка равен " + yearOne + "то он может кататься без сопровождения взрослого");
         }
 
         int occupiedPlaces = 104;
